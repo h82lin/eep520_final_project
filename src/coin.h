@@ -10,11 +10,11 @@ using namespace enviro;
 class coinController : public Process, public AgentInterface {
 
     public:
-    //Define a controller for the coin agent
+    //Defines a controller for the coin agent
     coinController() : Process(), AgentInterface() {}
 
     //The initialization function of the coin controller. This function detects whether the coin has colided with MyRobot, if yes, send an emit
-    //to so that the record.h file can watch and record the number of coins collected.
+    //so that the record.h file can watch the event and record the number of coins collected.
     void init() {
         notice_collisions_with("MyRobot", [&](Event &e) {        
             emit(Event("coin collected"));

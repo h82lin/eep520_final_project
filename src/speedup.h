@@ -10,7 +10,7 @@ using namespace enviro;
 class speedupController : public Process, public AgentInterface {
 
     public:
-    //Define a controller for the speedup agent
+    //Defines a controller for the speedup agent
     speedupController() : Process(), AgentInterface() {}
 
     //The initialization function of the speedup controller. This function detects whether the speedup ball has colided with MyRobot.

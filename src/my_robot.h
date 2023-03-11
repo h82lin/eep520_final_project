@@ -13,9 +13,9 @@ class MyRobotController : public Process, public AgentInterface {
     public:
     MyRobotController() : Process(), AgentInterface() {}
     
-    //Initialization of the robot controller. This functions watches user input from the "w", "a", "s", "d" keys from the keyboard.
+    //Initialization of the robot controller. This functions watches user input from the "w", "a", "s", "d" keys of the keyboard.
     //Also, it listens for collisions with zombie, speedup, and slowdown agents. When a collision with a zombie agent has occurred,
-    //it emits a "restart game" event to signal all zombies to teleport to their original location to retart the game. When a collision
+    //it emits a "restart game" event to signal all zombies to teleport to their initial location to restart the game. When a collision
     //with a speedup agent occurs, it increases the speed of the robot. When a collision with the slowdown agent have occured, it will
     //reduce the speed of the robot.
     void init() {
@@ -58,17 +58,17 @@ class MyRobotController : public Process, public AgentInterface {
     }
     void start() {}
 
-    //Update function to apply the speed and rotation values previously specified whenever a key "w", "a", "s", "d" key on the
+    //Update function to apply the speed and rotation values previously specified whenever "w", "a", "s", "d" key on the
     //keyboard is pressed.
     void update() {
         apply_force(f,tau);
     }
     void stop() {}
-    //f stores the velocity to move and tau stores the magnitude and direction of rotation
+    //f stores the speed to move and tau stores the magnitude and direction of rotation.
     double f, tau;
-    //magnitue stores the magnitude of velocity to move.
+    //magnitude stores the magnitude of velocity to move.
     double magnitude = 200;
-    //magnitude_t stores the magnitude of rotation velocity.
+    //magnitude_t stores the magnitude of rotational velocity.
     double magnitude_t = 200;
 
 };

@@ -11,14 +11,14 @@ namespace
 
     using namespace enviro;
 
-    //A class that represents the state of "MovingForward". This state basically tells the zombie agent to move forward or backwards
+    //A class that represents the state of "MovingForward". This state basically tells the zombie agent to move forward or backwards.
     class MovingForward : public State, public AgentInterface
     {
     public:
         void entry(const Event &e) {}
 
-        //The during function specifies and enables the straight line velocity of the zombie agent. It also implements mechanism to prevent the zombie from getting
-        //stuck. It does so by checking whether an object is within 40 units of distance in front. If it is, the functio will emit an
+        //The during function specifies and enables the straight line speed of the zombie agent. It also implements mechanism to prevent the zombie from getting
+        //stuck. It does so by checking whether an object is within 40 units of distance in front. If it is, the function will emit an
         //event to signal a change of state so that the zombie can rotate to another direction. 
         void during()
         {
@@ -30,6 +30,7 @@ namespace
 
         }
         void exit(const Event &e) {}
+        //Used to set unique tick name for each transition.
         void set_tick_name(std::string s) { tick_name = s; }
         std::string tick_name;
     };
@@ -38,12 +39,12 @@ namespace
     class Rotating : public State, public AgentInterface
     {
     public:
-        //The entry function defines the rate and directionthat the zombie will rotate.
+        //The entry function defines the rate and direction that the zombie should rotate.
         void entry(const Event &e) { rate = rand() % 2 == 0 ? 2 : -2; }
 
-        //The during function specifies and enables the rotation of the zombie agent. It also implements mechanism to prevent the zombie from rotating too
-        //much. It does so by stopping rotation when an object is over 140 units from an object in front. The function will emit an event when this happens
-        //to signal a change in state. This change of state will change the state so that the zombie can move forward in a particular direction.
+        //The during function specifies and enables the rotation rate of the zombie agent. It also implements mechanism to prevent the zombie from rotating when
+        //not needed. It does so by stopping rotation when an object is over 140 units from an object in front. The function will emit an event when this happens
+        //to signal a change in state. This change of state will change the state so that the zombie can move forward or backwards, instead of rotating.
         void during()
         {
             track_velocity(0, rate);
@@ -56,6 +57,7 @@ namespace
 
         //Stores rate of which the zombie will rotate.
         double rate;
+        //Used to set unique tick name for each transition.
         void set_tick_name(std::string s) { tick_name = s; }
         std::string tick_name;
     };
@@ -65,7 +67,7 @@ namespace
     {
 
     public:
-        //Sets the intial state of the state maachine, define transitions
+        //Sets the intial state of the state maachine, define transitions.
         ZombieController() : StateMachine()
         {
 
@@ -122,8 +124,8 @@ namespace
 };
 
     //The Zombie class is defined where the physics of the agent and cooridination of various activities with the manager are done.
-    //Also, the class acts as a container for processes. Note that the ZombieReset process zr is added to tohis class in order to
-    //takes care of when the game restarts.
+    //Also, the class acts as a container for processes. Note that the ZombieReset process zr is added to to this class in order to
+    //take care of game restarts
     class Zombie : public Agent
     {
 

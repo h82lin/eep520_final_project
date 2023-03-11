@@ -10,7 +10,7 @@ using namespace enviro;
 class recordController : public Process, public AgentInterface {
 
     public:
-    //Define a controller for the record agent
+    //Defines a controller for the record agent
     recordController() : Process(), AgentInterface() {}
 
     //Initialization function to watch for when coins are collected and when it is time to restart the game. When coins are

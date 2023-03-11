@@ -10,7 +10,7 @@ using namespace enviro;
 class slowdownController : public Process, public AgentInterface {
 
     public:
-    //Define a controller for the slowdown agent
+    //Defines a controller for the slowdown agent
     slowdownController() : Process(), AgentInterface() {}
     
     //The initialization function of the slowdown controller. This function detects whether the slowdown ball has colided with MyRobot.
