@@ -121,7 +121,7 @@ In the command prompt, navigate to the root of the eep520_final_project director
 
 ```sh
 
-make
+esm start
 
 ```
 
