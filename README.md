@@ -6,34 +6,30 @@
 
 ## Project Goal:
 
-To create a video game in which a robot can be controlled by a player. The player's objective is to collect as most gold coins as possible. There will also be numerous zombies that will end the game if it touches the robot. Performance enhancing items are available for robots to collect in order to increase and decrease its speed. Lastly, this project is also for me to familiarize myself with developing programs in Enviro and get a general understanding of what developing programs in embedded systems are like.
+To create a video game in which a robot can be controlled by a player. The player's objective is to collect as many gold coins as possible. There will also be numerous zombies that will end the game if it touches the robot. Performance enhancing items are available for robots to collect in order to increase and decrease its speed. Lastly, this project is also used to familiarize myself with developing programs in Enviro and get a general understanding of what developing programs in embedded systems are like.
 
   
   
 
 ## Key challenges:
 
-Developing a project using Enviro can present several challenges, including:
+Developing this project using Enviro presented several challenges, including:
 
 
 
-**Understanding the Enviro architecture**: Enviro has a unique architecture that can be challenging to understand at first. It is based on a decentralized system of agents that interact with each other using message passing. To address this challenge, it is important to study the Enviro documentation and examples carefully and understand how agents, behaviors, and messages work together.
-
-  
-
-**Lacking full documentation**: Enviro lacks full documentation. Many of the functions are not documented completely, thus it often resulted in trail and error in order to implement functions.
+**Understanding the Enviro architecture**: Enviro has a unique architecture that can be challenging to understand at first. It is based on a decentralized system of agents that interact with each other using message passing. To address this challenge, I studied the Enviro documentation and examples carefully and understood how agents, behaviors, and messages work together.
 
   
 
-**Implementing agent behaviors**: Implementing agent behaviors that interact with the environment and other agents can be challenging, especially if the behavior is complex or requires coordination with other agents. To address this challenge, it is important to break down the behavior into smaller, simpler components and test each component independently before integrating them into the final behavior.
+**Lacking full documentation**: Enviro lacks full documentation. Many of the functions are not documented completely. I addressed this challenge by resorting to trail and error when implementing functions.
 
   
 
-**Debugging**: Debugging can be challenging in Enviro because of the decentralized nature of the system. It can be difficult to identify which agent or behavior is causing a problem. To address this challenge, it is important to use debugging tools such as print statements or the Enviro debugger to narrow down the problem.
+**Implementing agent behaviors**: Implementing agent behaviors that interact with the environment and other agents can be challenging, especially if the behavior is complex or requires coordination with other agents. To address this challenge, I broke down the behavior into smaller, simpler components and tested each component independently before integrating them into the final behavior.
 
   
 
-Overall, developing a project using Enviro requires careful planning, testing, and debugging. However, with the right approach and mindset, these challenges can be overcome and a successful project can be created.
+**Debugging**: Debugging can be challenging in Enviro because of the decentralized nature of the system. It can be difficult to identify which agent or behavior is causing a problem. To address this challenge, I used debugging tools such as print statements to narrow down the problem.
 
   
 
@@ -98,7 +94,7 @@ docker run -p80:80  -p8765:8765  -v  $PWD:/source  -it klavins/enviro:1.01  bash
 docker run -p80:80  -p8765:8765  -v  $PWD:/source  -it klavins/enviro:alpha bash
 
 ```
-The above commands do the following:
+The above commands does the following:
 - The `-p80:80 option maps port 80 from the Docker container to ports on your host computer. This should allow you to go to
 
   
@@ -113,7 +109,7 @@ The above commands do the following:
 
   
 
-Git clone this repository:
+The next step is to git clone this repository:
 
 ```sh
 
@@ -121,7 +117,7 @@ git clone https://github.com/h82lin/eep520_final_project.git
 
 ```
 
-In the command prompt, navigate to the root of the eep520_final_project directory and make the project:
+In the command prompt, navigate to the root of the eep520_final_project directory and `make` the project:
 
 ```sh
 
@@ -160,7 +156,7 @@ This should allow you to go to http://localhost and use the application.
 
   
 
-- There are 2 performance enhancing balls availalbe for Robot to collect. The light-blue ball speeds up Robot and the black ball slows down Robot.
+- There are 2 performance enhancing balls available for Robot to collect. The light-blue ball speeds up Robot and the black ball slows down Robot.
 
   
 
