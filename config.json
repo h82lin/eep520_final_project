@@ -1,0 +1,345 @@
+{
+
+    "name": "My Enviro Project",
+    "ip": "0.0.0.0",
+    "port": 8765,
+
+    "buttons": [],
+
+    "agents": [
+        {
+            "definition": "defs/my_robot.json",
+            "style": { "fill": "lightgreen", "stroke": "black" },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "theta": 0
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -100,
+                "y": 0,
+                "theta": 23
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -100,
+                "y": -150,
+                "theta": 1
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 100,
+                "y": 0,
+                "theta": 124
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -160,
+                "y": 35,
+                "theta": 167
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 200,
+                "y": 52,
+                "theta": 247
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 200,
+                "y": 150,
+                "theta": 24
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -200,
+                "y": 150,
+                "theta": 624
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -23,
+                "y": 45,
+                "theta": 624
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 113,
+                "y": 158,
+                "theta": 247
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 300,
+                "y": -200,
+                "theta": 13
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 56,
+                "y": -40,
+                "theta": 132
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -325,
+                "y": -122,
+                "theta": 21
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -214,
+                "y": -52,
+                "theta": 0
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -300,
+                "y": -200,
+                "theta": 12
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 300,
+                "y": 200,
+                "theta": 6
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -300,
+                "y": 200,
+                "theta": 195
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 60,
+                "y": 222,
+                "theta": 138
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -250,
+                "y": -3,
+                "theta": 133
+            }
+        },
+        {
+            "definition": "defs/zombie.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -244,
+                "y": 24,
+                "theta": 169
+            }
+        },
+        {
+            "definition": "defs/coin.json",
+            "style": { "fill": "yellow", "stroke": "black" },
+            "position": {
+                "x": -50,
+                "y": -50,
+                "theta": 0
+            }
+        },
+        {
+            "definition": "defs/coin.json",
+            "style": { "fill": "yellow", "stroke": "black" },
+            "position": {
+                "x": -200,
+                "y": -50,
+                "theta": 0
+            }
+        },
+        {
+        "definition": "defs/record.json",
+            "style": {
+                "fill": "white",
+                "stroke": "none",
+                "strokeWidth": 1
+            },
+            "position": {
+                "x": -340,
+                "y": -245,
+                "theta": 0
+            }
+        },
+        {
+        "definition": "defs/speedup.json",
+            "style": {
+                "fill": "lightblue",
+                "stroke": "none",
+                "strokeWidth": 1
+            },
+            "position": {
+                "x": 55,
+                "y": 30,
+                "theta": 0
+            }
+        },
+        {
+        "definition": "defs/slowdown.json",
+            "style": {
+                "fill": "black",
+                "stroke": "none",
+                "strokeWidth": 1
+            },
+            "position": {
+                "x": 131,
+                "y": 30,
+                "theta": 0
+            }
+        }
+
+        
+
+    ],
+
+    "statics": [
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": -230 },
+                { "x": -350,  "y": 230 },
+                { "x": -340,  "y": 230 },
+                { "x": -340, "y": -230 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": 350, "y": -230 },
+                { "x": 350,  "y": 230 },
+                { "x": 340,  "y": 230 },
+                { "x": 340, "y": -230 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": 240 },
+                { "x": 350,  "y": 240 },
+                { "x": 350,  "y": 230 },
+                { "x": -350, "y": 230 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": -240 },
+                { "x": 350,  "y": -240 },
+                { "x": 350,  "y": -230 },
+                { "x": -350, "y": -230 }
+            ]   
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -250, "y": -150 },
+                { "x": 250,  "y": -150 },
+                { "x": 250,  "y": -140 },
+                { "x": -250, "y": -140 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -250, "y": 150 },
+                { "x": 250,  "y": 150 },
+                { "x": 250,  "y": 140 },
+                { "x": -250, "y": 140}
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -70, "y": 0 },
+                { "x": -100,  "y": 0 },
+                { "x": -100,  "y": 80 },
+                { "x": -70, "y": 80}
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": 70, "y": 0 },
+                { "x": 100,  "y": 0 },
+                { "x": 100,  "y": -80 },
+                { "x": 70, "y": -80}
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": 320, "y": 40 },
+                { "x": 340,  "y": 40 },
+                { "x": 340,  "y": -40 },
+                { "x": 320, "y": -40}
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -320, "y": 40 },
+                { "x": -340,  "y": 40 },
+                { "x": -340,  "y": -40 },
+                { "x": -320, "y": -40}
+            ]
+        }
+    ]
+
+}
